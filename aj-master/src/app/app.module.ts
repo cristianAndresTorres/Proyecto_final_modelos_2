@@ -8,6 +8,7 @@ import { ComunicacionComponent } from './comunicacion/comunicacion.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormularioComponent } from './formulario/formulario.component';
+import { FilasColumnasComponent } from './filas-columnas/filas-columnas.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     AppComponent,
     TableroComponent,
     ComunicacionComponent,
-    FormularioComponent
+    FormularioComponent,
+    FilasColumnasComponent
   ],
   imports: [
     BrowserModule,

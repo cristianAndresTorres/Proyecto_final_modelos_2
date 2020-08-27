@@ -19,6 +19,7 @@ export class ComunicacionComponent implements OnInit {
   posFinY = "";
   decision = "";
   //--------------------
+  verificaJaque="";
 
   constructor(private http: ComandosService) { }
 
@@ -33,17 +34,28 @@ export class ComunicacionComponent implements OnInit {
        this.decision = data.decision;
  
        //--------------------------
+       this.verificaJaque=data.verificaJaque;
 
 
-
-      if (this.decision== "true"){
-        var guardar= document.getElementById(this.posIniX+""+this.posIniY).innerHTML;
-        document.getElementById(this.posFinX+""+this.posIniY).innerHTML =guardar;
-        document.getElementById(this.posIniX+""+this.posIniY).innerHTML = "";
+       if(this.verificaJaque=="Jaque Mate :("){
+        alert("JAQUE MATE!");
+      }else{
+        if (this.decision=="true"){
+          //guardar lo que este en la posicion final
+          var guardar= document.getElementById(this.posIniY+""+this.posIniX).innerHTML;
+          //Vacia la posicion
+          document.getElementById(this.posIniY+""+this.posIniX).innerHTML = "";
+          //se reescribe la nueva posicion
+  
+          document.getElementById(this.posFinY+""+this.posFinX).innerHTML =guardar;
+        
+        } else{
+          alert("movimiento invalido");
+        }
       }
-      else{
-        alert("movimiento invalido");
-      }
+     
+
+      
 
       /*for(var i=0; i<8; i++){
         for(var j=0; j<8; j++){

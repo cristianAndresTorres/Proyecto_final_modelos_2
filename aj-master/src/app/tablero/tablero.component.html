@@ -1,17 +1,18 @@
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <div style="text-align:center">
-    <button (click)="inicializarTablero()">Comenzar Juego </button>
+    <button class="btn btn-dark" (click)="inicializarTablero()">Comenzar Juego </button>
 
 <!--    <th class="jugador" id="jugador1" width="50%" colspan="4">{{jugador1.nombre | uppercase}}</th>
         <th class="jugador" id="jugador2" width="50%" colspan="4">{{jugador2.nombre | uppercase}}</th>-->
+
+<app-filas-columnas></app-filas-columnas>     
 
 <table id="tabAje"  name="tabAje" width="50%">
     <tr *ngFor="let fila of filas">
         <td *ngFor="let celda of fila" class={{celda.clase}} id={{celda.id}}></td>
     </tr>
-    
 </table>
 
 
-</div>
 
