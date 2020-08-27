@@ -36,15 +36,21 @@ export class ComunicacionComponent implements OnInit {
 
 
 
+      if (this.decision== "true"){
+        var guardar= document.getElementById(this.posIniX+""+this.posIniY).innerHTML;
+        document.getElementById(this.posFinX+""+this.posIniY).innerHTML =guardar;
+        document.getElementById(this.posIniX+""+this.posIniY).innerHTML = "";
+      }
+      else{
+        alert("movimiento invalido");
+      }
 
-      for(var i=0; i<8; i++){
+      /*for(var i=0; i<8; i++){
         for(var j=0; j<8; j++){
           document.getElementById(i+""+j).innerHTML = "";
         }
-      }
-      if(this.decision == "false"){
-        document.getElementById("30").innerHTML = "&#9817;";
-      }
+      }*/
+      
     });
     //alert("ya");
   }
