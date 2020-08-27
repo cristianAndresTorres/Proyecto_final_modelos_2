@@ -1,0 +1,17 @@
+
+<div style="text-align:center">
+    <button (click)="inicializarTablero()">Comenzar Juego </button>
+
+<!--    <th class="jugador" id="jugador1" width="50%" colspan="4">{{jugador1.nombre | uppercase}}</th>
+        <th class="jugador" id="jugador2" width="50%" colspan="4">{{jugador2.nombre | uppercase}}</th>-->
+
+<table id="tabAje"  name="tabAje" width="50%">
+    <tr *ngFor="let fila of filas">
+        <td *ngFor="let celda of fila" class={{celda.clase}} id={{celda.id}}></td>
+    </tr>
+    
+</table>
+
+
+</div>
+

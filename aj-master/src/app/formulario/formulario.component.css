@@ -1,0 +1,66 @@
+body{
+    background: red;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background: center;
+    margin: 0;
+    background: rgba(171, 235, 198,0.5);
+    
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgb(171, 235, 198,0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;  
+}
+.filaA {
+    
+    background: #8cb3d9;
+    font-size: 32px; 
+    color: aliceblue;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h6{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 100px;
+    margin-bottom: 120px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;  
+
+    
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    
+}
+
+#botton{
+    background: darkgray;
+    color: white;
+    padding: 10px;
+}

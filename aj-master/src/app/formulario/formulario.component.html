@@ -1,0 +1,23 @@
+<form > 
+    Nombre del jugador 1 <input type="text" #tbName id="tbName">
+    <br>
+    Nombre del jugador 2 <input type="text" #tbName2 id="tbName2">
+    <br>
+    
+    <p>
+        <input type="submit" (click)="changeLabelName(lblName.id, tbName.value,lblName2.id,tbName2.value)" id="button" value="Guardar nombres">
+     
+    </p>
+    
+    <ng-container>
+        <p>
+            <label #lblName id="lblName">
+            </label>
+            <br>
+            <label #lblName2 id="lblName2">
+            </label>
+            
+        </p>
+    
+    </ng-container>
+    </form>
